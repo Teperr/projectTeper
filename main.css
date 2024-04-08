@@ -186,3 +186,15 @@ dialog button:hover{
     min-width: 70px;
     /* min-height: 50px; */
 }
+
+@media (max-width: 720px) {
+    /* כאן תוכל להוסיף את הסגנונות שתרצה להחיל כאשר גודל המסך קטן מ־720px */
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 20px;
+    
+    
+    
+    }
+}
