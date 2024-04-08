@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: #383d46;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border-bottom: 1px solid #d3d3d3; */
+    color: #EEEEEE;
+
+}
+header h1{
+    margin-inline-start: 2em;
+}
+
+header p{
+    margin-inline-end: 2em;
+}
+
+section {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(150px , 1fr)); */
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+
+    /* background-color: aliceblue; */
+    padding: 20px;
+    list-style: none;
+
+    /* margin: 10px; */
+
+
+}
+
+article {
+    background-color: #76ABAE;
+    border: 3px solid #222831;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding-block: 2em; */
+    min-height: 250px;
+    /* min-width: 150px; */
+    padding: 20px auto;
+    border-radius: 2em;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px;
+
+}
+
+article:hover {
+    background-color: #608587;
+    border: 3px solid #EEEEEE;
+    color: #EEEEEE;
+
+
+    transition: 0.4s;
+
+
+
+}
+
+dialog {
+    min-width: 65vw;
+    min-height: 50vh;
+}
+
+
+
+.date-and-time-header-dialog{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    
+}
+
+table tr {
+    border: 1px solid black;
+    /* display: flex;  */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+    
+}
+
+.date-title {
+    color: #383d46;
+}
+
+table tr td {
+    margin: 20px auto;
+    border: 1px solid black;
+
+}
+
+
+table tr td:hover {
+    background-color: #608587;
+    cursor: default;
+    color: #EEEEEE;
+    font-weight: bold;
+
+}
+
+.net-profits {
+    color: #A5DD9B;
+    font-weight: bold;
+
+}
+
+.title-game {
+    color: #383d46;
+    display: flex; 
+}
+
+.title p {
+    display: flex;
+    margin-inline-start: 5px;
+
+}
+
+.header-dialog {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+
+.date-and-time-header-dialog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+
+
+
+
+}
+
+dialog{
+    border: none;
+    border-radius: 2em;
+    background-color: #82aeb1;
+    border: 3px solid #222831;
+
+}
+
+dialog button{
+    background-color: #82aeb1;
+    border: none;
+    border-radius: .5em;
+    border: 1px solid #222831;
+}
+
+dialog button:hover{
+    background-color: #43595a;
+    border: none;
+}
+
+.total-page-profit-stat{
+    background-color: #75986f;
+    border-radius: 1em;
+    padding: 1rem;
+    min-width: 70px;
+    /* min-height: 50px; */
+}

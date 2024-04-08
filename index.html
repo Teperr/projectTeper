@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/a190ef2d05.js" crossorigin="anonymous"></script>
+    
+</head>
+<body onload="onInit()">
+    <header>
+        <h1>Arbitrag Bot</h1>
+        <p class="total-page-profit-stat"></p>
+    
+    </header>
+    <section>
+        <ul>
+          
+        </ul>
+    </section>
+    <dialog>
+        <button onclick="onCloseModal()">X</button>
+        <!-- <section class="main-container">
+        </section> -->
+            <table></table>
+    </dialog>
+    <!-- <header><p></p></header> -->
+    <!-- <table>
+        
+        <tr>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Draw</th>
+        </tr>
+        <tr>
+            <td>outcome_name > home_team</td>
+            <td>outcome_name >away_team</td>
+            <td>outcome_name</td>
+        </tr>
+        <tr>
+            <td>outcome_price > home_team</td>
+            <td>outcome_price > away_team</td>
+            <td>outcome_price > Draw</td>
+        </tr>
+        <tr>
+            <td>bookmaker_title > home_team</td>
+            <td>bookmaker_title > away_team</td>
+            <td>bookmaker_title > Draw</td>
+        </tr>
+        <tr>
+            <td>stake > home_team</td>
+            <td>stake > away_team</td>
+            <td>stake > Draw</td>
+        </tr>
+       </table>  -->
+
+
+    <script src="game.data.js"></script>
+    <script src="service.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>
+
+<!-- var strHtml = gamesFix.map((game, idx) =>
+
+
+        `
+        <li onclick="onclickCardGame(this)" data-idx="${idx}">
+            <article class="card-game card${idx} ">
+                <p class="game-time" alt="Gema Date"><span><i class="fa-solid fa-calendar-days"></i> </span>${game[0].commence_time.slice(0, 10)}</p>
+                <p class="game-time" alt="Gema Time"><span><i class="fa-solid fa-clock"></i></span>${game[0].commence_time.slice(11, 16)}</p>
+                <p class="home-team" alt="Home Team"><span><i class="fa-solid fa-house-chimney"></i> </span>${game[0].home_team}</p>
+                <p>VS</p>
+                <p class="away-team" alt="Away Team"><span><i class="fa-solid fa-train-subway"></i> </span>${game[0].away_team}</p>
+                <p><span><i class="fa-solid fa-hand-holding-dollar"></i> </span><span class="net-profits">${(game[0].outcome_price * game[0].stake).toString().slice(0, 6)}</span></p>
+
+                                   
+
+
+
+            </article>
+        </li>`
+
+    ) -->
